@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function App() {
   const [count, setCount] = useState(2.3);
@@ -12,6 +13,8 @@ function App() {
       <div>
         <button onClick={() => setCount(count * 2)}>Click me {count}</button>
       </div>
+
+      <Footer/>
     </>
   );
 }
